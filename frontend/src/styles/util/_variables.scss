@@ -1,0 +1,85 @@
+$breakpoints: (
+  // smalls
+  "small": 320px,
+  "mobile": 320px,
+  //   mediums
+  "smedium": 500px,
+  "medium": 768px,
+  "tablet": 768px,
+  //   larges
+  "large": 1024px,
+  "desktop": 1024px,
+  //   extra larges
+  "xlarge": 1200px,
+  "xxlarge": 1440px,
+  "widescreen": 1440px
+) !default;
+
+
+// Brand Core Colors
+$neora-blue: #64b1bc;
+$sky-blue: #b8dde1;
+$happiness-orange: #ff9e15;
+$apple-green: #81bd41;
+$cool-gray: #a3a9ac;
+$ash-gray: #5c666f;
+$sailor-blue: #264b59;
+
+// NeoraFit Branch Colors
+$slim-skin: #b06470;
+$slim-skin-dark: #71303f;
+$cleanse-calm: #64b1bc;
+$cleanse-calm-dark: #007481;
+$block-balance: #feaa61;
+$block-balance-dark: #c97d31;
+$neora-fit-yellow: #fef7eb;
+$neora-fit-blue: #113e53;
+
+// Protein Powder
+$protein-blue: #5c7891;
+$protein-icon: #95785e;
+$protein-bg: #d1b196;
+
+// Seasonal - Fall
+$slate-blue: #044051;
+$true-teal: #1d7a80;
+$greige: #c6b9b6;
+$light-greige: #e8e3e2;
+$pumpkin: #eb9c25;
+$red-orange: #d1541b;
+$deep-red: #9d2b22;
+
+// Seasonal - Holiday
+$cranberry: #b72259;
+$blush: #eacfcc;
+$light-blush: #f5e6e4;
+$slate-blue: #044051;
+$dirty-denim: #b3c9e3;
+$gold-masked: #f3ca50;
+
+// Seasonal - Spring
+$dusty-sky: #c5d6d0;
+$light-dusty-sky: #f0f4f2;
+$aquarium-blue: #1ebec3;
+$apple-green: #81bd41;
+$maize: #eed0b1;
+$coral: #e38373;
+$green: #59ab8b;
+$lemongrass: #adc965;
+
+// Seasonal - Summer
+$sunshine: #ffe493;
+$pastel-yellow: #fff4d1;
+$gold: #fac172;
+$salamander: #fd8357;
+$lemongrass: #adc965;
+$light-turquoise: #89d5c9;
+$blue-love: #1f8abe;
+
+// Neutrals
+$black: #000000;
+$white: #ffffff;
+$primary-text: #454545;
+
+// Home Page Theme Color
+$hp-theme: #71303f;

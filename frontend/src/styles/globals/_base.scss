@@ -1,0 +1,114 @@
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap');
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// body {
+//     font-family: 'Inter', sans-serif;
+//     font-weight: 300;
+// }
+$mdc: #da6867;
+section.fp-component-section {
+    .wrapper {
+        .fp-component {
+            @include flex(column, wrap, space-evenly, center);
+            gap: 1rem;
+            @include break(smedium) {
+                flex-direction: row;
+                align-items: start;
+            }
+            @include break(medium) {
+                gap: 2rem 1rem;
+            }
+            .fp-item {
+                width: 100%;
+                max-width: 350px;
+                opacity: 0;
+                
+                @include break(smedium) {
+                    width: 40%;
+                    max-width: 40%;
+                }
+                @include break(medium) {
+                    width: 20%;
+                    max-width: 20%;
+                    font-size: .8rem;
+                }
+                @include break(large) {
+                    font-size: 1rem;
+                }
+                img {
+                    width: 100%;
+                    max-width: 100%;
+                }
+                &:nth-child(1) {
+                    animation: animin 1.5s .5s ease forwards;
+                }
+                &:nth-child(2) {
+                    animation: animin 1.5s .75s ease forwards;
+                }
+                &:nth-child(3) {
+                    animation: animin 1.5s 1s ease forwards;
+                }
+                &:nth-child(4) {
+                    animation: animin 1.5s 1.25s ease forwards;
+                }
+            }
+        }
+        .fp-button-container {
+            @include flex(row, nowrap, center, center);
+            margin-top: 2rem;
+            @include break(medium) {
+                justify-content: end;
+            }
+            a {
+                @include bg($mdc);
+                @include radius(25px);
+                display: block;
+                width: 100%;
+                color: white;
+                padding: .5rem 1rem;
+                text-align: center;
+                font-weight: 600;
+                margin: auto;
+                opacity: 0;
+                animation: animin_btn 1.5s 2s ease forwards;
+                @include break(smedium) {
+                    max-width: 350px;
+                }
+                @include break(medium) {
+                    margin-left: auto;
+                    margin-right: 2rem;
+                    max-width: 250px;
+                    transition: background .2s;
+                    &:hover {
+                        @include bg(lighten($mdc, 8%));
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animin {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes animin_btn {
+    0% {
+        opaciy: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
